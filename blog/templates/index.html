@@ -1,0 +1,17 @@
+<html>
+
+    <head>
+        <title> Welcome to my blog </title>
+    </head>
+    <body>
+       <h1>  My Latest Posts: </h1>
+        {%for post in posts%}
+            <h3> {{post.title}} </h3>
+            {{post.time}}
+            <br>
+            {{post.body}}
+            <hr>
+            {% endfor %}
+    </body>
+
+</html>
